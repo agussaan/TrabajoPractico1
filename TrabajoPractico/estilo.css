@@ -1,0 +1,126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.bodymenu1{
+    background-image: url('img/frente-monserrat-noche-ajustada.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Hace que el fondo no se mueva */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.8); /* Negro con transparencia */
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 48px;
+    font-family: 'Segoe UI', sans-serif;
+}
+.h2 {
+    color: white;
+    font-size: 24px;
+    font-family: 'Segoe UI', sans-serif;
+    margin-top: 10px;
+}
+
+p {
+    color: #f5f5f5;
+    font-size: 20px;
+}
+.overlay h1, .overlay p {
+    color: white;
+}
+
+.overlay:hover {
+    background-color: rgba(0, 0, 0, 0.9); 
+}
+
+.barra-superior {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    z-index: 1000; 
+}
+
+nav {
+    padding-top: 60px; 
+    padding: 10px 0;
+    text-align: center;
+}
+
+section > div {
+    display: flex;
+    justify-content: space-between; /* distribuye las columnas con espacio entre ellas */
+    padding: 20px;
+  }
+  
+  section > div > div > div {
+    flex: 1; /* cada columna ocupa el mismo ancho */
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* podés cambiarlo a lo que quieras */
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.bodymenu{
+    background-image: url('img/menu-uadebites.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Hace que el fondo no se mueva */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+    
+.caja {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    transition: all 0.3s ease; /* suaviza el cambio */
+    cursor: pointer;
+  }
+  
+  .caja:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* cambia el color de fondo */
+    transform: scale(1.05); /* agranda levemente */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* más sombra */
+  }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}  
