@@ -159,13 +159,6 @@ a {
     display: flex;
     margin: auto
 }
-.build_containerind {
-    width: 60%;
-    height: 50%;
-    align-items: center;
-    display:center;
-    margin: auto
-}
 
 .build {
     backdrop-filter: blur(14px);
@@ -182,17 +175,6 @@ a {
     background-color: rgba(255,255,255,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.buildind {
-    backdrop-filter: blur(14px);
-    padding: 30 0 30 0;
-    width: 40%;
-    height: 100%;
-    border-radius: 15px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-    background-color: rgba(255,255,255,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 
 
 .build:hover {
