@@ -206,3 +206,12 @@ a {
 .container .back_btn img {
     margin-right: 10
 }
+
+.starbu_container {
+    height: 35vh;
+    width: 100%;
+    background-image: url('img/starbucks-2.png');
+   background-position: center;
+   background-repeat: no-repeat
+   
+}
