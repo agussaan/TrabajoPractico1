@@ -60,7 +60,7 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
-  }
+}
   
 
 .container_menu{
@@ -354,3 +354,14 @@ form button:hover {
     margin-bottom: 40px;
     font-weight: 800
 }
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+p{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+  
