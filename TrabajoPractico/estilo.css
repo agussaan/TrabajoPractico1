@@ -5,15 +5,15 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: normal;
 }
 
-.bodymenu1{
+/* ESTILOS PAGINA PRINCIPAL */
+.container_main{
     background-image: url('img/frente-monserrat-noche-ajustada.jpg'); 
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Hace que el fondo no se mueva */
+    background-attachment: fixed; 
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -22,25 +22,23 @@
 }
 
 .overlay {
-    background-color: rgba(0, 0, 0, 0.8); /* Negro con transparencia */
+    background-color: rgba(0, 0, 0, 0.8); 
     padding: 40px;
     border-radius: 10px;
     text-align: center;
 }
 
-h1 {
+/* ESTILOS MENU */
+.title {
     color: white;
     font-size: 48px;
-    font-family: 'Segoe UI', sans-serif;
 }
 .h2 {
     color: white;
     font-size: 24px;
-    font-family: 'Segoe UI', sans-serif;
     margin-top: 10px;
 }
-
-p {
+.overlay p {
     color: #f5f5f5;
     font-size: 20px;
 }
@@ -52,45 +50,24 @@ p {
     background-color: rgba(0, 0, 0, 0.9); 
 }
 
-.barra-superior {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7); 
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    font-weight: bold;
-    z-index: 1000; 
-}
-
-nav {
+.title_container {
     padding-top: 60px; 
     padding: 10px 0;
     text-align: center;
 }
 
-section > div {
+.contenedor div {
     display: flex;
-    justify-content: space-between; /* distribuye las columnas con espacio entre ellas */
+    justify-content: space-between;
     padding: 20px;
   }
   
-  section > div > div > div {
-    flex: 1; /* cada columna ocupa el mismo ancho */
-    text-align: center;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.8); /* podés cambiarlo a lo que quieras */
-    margin: 5px;
-    border-radius: 10px;
-}
 
-.bodymenu{
+.container_menu{
     background-image: url('img/menu-uadebites.png'); 
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Hace que el fondo no se mueva */
+    background-attachment: fixed;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -106,28 +83,57 @@ section > div {
 }
     
 .caja {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(255,255,255,0.2);
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     flex: 1;
     margin: 0 10px;
-    transition: all 0.3s ease; /* suaviza el cambio */
+    transition: all 0.3s ease;
     cursor: pointer;
   }
   
-  .caja:hover {
-    background-color: rgba(0, 0, 0, 0.9); /* cambia el color de fondo */
-    transform: scale(1.05); /* agranda levemente */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* más sombra */
-  }
+.caja:hover {
+background-color: rgba(255,255,255,0.5);
+transform: scale(1.05);
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
 
-a {
+.contenedor div a {
     text-decoration: none;
     color: inherit;
 }  
 
+.form_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem 
+}
+
+.form_btn a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    transition: .3s;
+}
+.form_btn a:hover {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* ESTILOS PAGINAS EDIFICIOS */
 .container {
     width: 100%;
     height: 100vh;
@@ -171,7 +177,6 @@ a {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
 .build:hover {
     background-color: rgba(255,255,255,0.1);
     transform: scale(1.03);
@@ -204,7 +209,7 @@ a {
     align-items: center;
 }
 
-.container .back_btn img {
+.back_btn img {
     margin-right: 10
 }
 
@@ -212,10 +217,99 @@ a {
     height: 35vh;
     width: 100%;
     background-image: url('img/starbucks-2.png');
-   background-position: center;
-   background-repeat: no-repeat
-   
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+.container_contact {
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/ChatGPT\ Image\ 25\ abr\ 2025\,\ 09_49_07\ p.m..png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.subcontainer_contact {
+    width: 50%;
+    height: 70%;
+    margin: auto;
+    background-color: rgba(255,255,255,0.6);
+    backdrop-filter: blur(14px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+}
+
+.subcontainer_contact .title{
+    color: #f2994a;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.main_contact {
+    width: 60%;
+    margin: auto;
+}
+
+.form_contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.form_contact form {
+  padding: 2rem;
+  border-radius: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: rgba(255, 255, 255, 1);
+  color: #000000;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+form input:focus,
+form textarea:focus {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+form button {
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #f2994a, #f2c94c);
+  color: #333;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+form button:hover {
+  transform: scale(1.02);
+}
+
 
 .subcontainerinde {
     width: 40%;
